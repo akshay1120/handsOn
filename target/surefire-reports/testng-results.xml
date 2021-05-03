@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="52272" started-at="2021-05-02T14:40:36Z" finished-at="2021-05-02T14:41:28Z">
+    <groups>
+    </groups>
+    <test name="ATest" duration-ms="52272" started-at="2021-05-02T14:40:36Z" finished-at="2021-05-02T14:41:28Z">
+      <class name="com.jbk.login_page.InvalidDataError">
+        <test-method status="PASS" signature="verifyInvalidLogInErrorMessage()[pri:0, instance:com.jbk.login_page.InvalidDataError@6d8a00e3]" name="verifyInvalidLogInErrorMessage" duration-ms="3564" started-at="2021-05-02T14:41:07Z" finished-at="2021-05-02T14:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogInErrorMessage -->
+      </class> <!-- com.jbk.login_page.InvalidDataError -->
+      <class name="com.jbk.login_page.SubHeading">
+        <test-method status="PASS" signature="verifySubHeading()[pri:0, instance:com.jbk.login_page.SubHeading@402f32ff]" name="verifySubHeading" duration-ms="2826" started-at="2021-05-02T14:40:57Z" finished-at="2021-05-02T14:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubHeading -->
+      </class> <!-- com.jbk.login_page.SubHeading -->
+      <class name="com.jbk.login_page.InvalidEmailAndPassword">
+        <test-method status="PASS" signature="verifyInvalidLogIn()[pri:0, instance:com.jbk.login_page.InvalidEmailAndPassword@573f2bb1]" name="verifyInvalidLogIn" duration-ms="3369" started-at="2021-05-02T14:41:00Z" finished-at="2021-05-02T14:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogIn -->
+      </class> <!-- com.jbk.login_page.InvalidEmailAndPassword -->
+      <class name="com.jbk.login_page.RegisterLinkText">
+        <test-method status="PASS" signature="verifyRegisterLinkText()[pri:0, instance:com.jbk.login_page.RegisterLinkText@48eff760]" name="verifyRegisterLinkText" duration-ms="3126" started-at="2021-05-02T14:40:54Z" finished-at="2021-05-02T14:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterLinkText -->
+      </class> <!-- com.jbk.login_page.RegisterLinkText -->
+      <class name="com.jbk.login_page.Url">
+        <test-method status="PASS" signature="verifyUrl()[pri:0, instance:com.jbk.login_page.Url@3c756e4d]" name="verifyUrl" duration-ms="3042" started-at="2021-05-02T14:40:46Z" finished-at="2021-05-02T14:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+      </class> <!-- com.jbk.login_page.Url -->
+      <class name="com.jbk.login_page.BlankDataError">
+        <test-method status="PASS" signature="verifyBlankLogIn()[pri:0, instance:com.jbk.login_page.BlankDataError@6d78f375]" name="verifyBlankLogIn" duration-ms="2916" started-at="2021-05-02T14:41:22Z" finished-at="2021-05-02T14:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlankLogIn -->
+      </class> <!-- com.jbk.login_page.BlankDataError -->
+      <class name="com.jbk.login_page.LogoutSuccessfullyMessage">
+        <test-method status="PASS" signature="verifyLogoutSuccessfullyMessage()[pri:0, instance:com.jbk.login_page.LogoutSuccessfullyMessage@7ac7a4e4]" name="verifyLogoutSuccessfullyMessage" duration-ms="7527" started-at="2021-05-02T14:41:14Z" finished-at="2021-05-02T14:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutSuccessfullyMessage -->
+      </class> <!-- com.jbk.login_page.LogoutSuccessfullyMessage -->
+      <class name="com.jbk.login_page.Heading">
+        <test-method status="PASS" signature="verifyHeading()[pri:0, instance:com.jbk.login_page.Heading@6a2bcfcb]" name="verifyHeading" duration-ms="3004" started-at="2021-05-02T14:40:40Z" finished-at="2021-05-02T14:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeading -->
+      </class> <!-- com.jbk.login_page.Heading -->
+      <class name="com.jbk.login_page.Logo">
+        <test-method status="PASS" signature="verifyLogo()[pri:0, instance:com.jbk.login_page.Logo@1efbd816]" name="verifyLogo" duration-ms="4153" started-at="2021-05-02T14:40:36Z" finished-at="2021-05-02T14:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+      </class> <!-- com.jbk.login_page.Logo -->
+      <class name="com.jbk.login_page.RegisterLink">
+        <test-method status="PASS" signature="verifyRegisterLink()[pri:0, instance:com.jbk.login_page.RegisterLink@50c87b21]" name="verifyRegisterLink" duration-ms="3285" started-at="2021-05-02T14:41:25Z" finished-at="2021-05-02T14:41:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterLink -->
+      </class> <!-- com.jbk.login_page.RegisterLink -->
+      <class name="com.jbk.login_page.ValidEmailAndPassword">
+        <test-method status="PASS" signature="verifyValidLogIn()[pri:0, instance:com.jbk.login_page.ValidEmailAndPassword@7c0e2abd]" name="verifyValidLogIn" duration-ms="5020" started-at="2021-05-02T14:40:49Z" finished-at="2021-05-02T14:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogIn -->
+      </class> <!-- com.jbk.login_page.ValidEmailAndPassword -->
+      <class name="com.jbk.login_page.SignInBoxHeading">
+        <test-method status="PASS" signature="verifySignInBoxHeading()[pri:0, instance:com.jbk.login_page.SignInBoxHeading@4de8b406]" name="verifySignInBoxHeading" duration-ms="3222" started-at="2021-05-02T14:40:43Z" finished-at="2021-05-02T14:40:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInBoxHeading -->
+      </class> <!-- com.jbk.login_page.SignInBoxHeading -->
+      <class name="com.jbk.login_page.Title">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.jbk.login_page.Title@548b7f67]" name="verifyTitle" duration-ms="3923" started-at="2021-05-02T14:41:11Z" finished-at="2021-05-02T14:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+      </class> <!-- com.jbk.login_page.Title -->
+      <class name="com.jbk.login_page.Placeholders">
+        <test-method status="PASS" signature="verifyPlaceholders()[pri:0, instance:com.jbk.login_page.Placeholders@5ae9a829]" name="verifyPlaceholders" duration-ms="3252" started-at="2021-05-02T14:41:04Z" finished-at="2021-05-02T14:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaceholders -->
+      </class> <!-- com.jbk.login_page.Placeholders -->
+    </test> <!-- ATest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  ATest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ATest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 02 20:10:36 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52272 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jbk.login_page.BlankDataError.verifyBlankLogIn()'><b>verifyBlankLogIn</b><br>Test class: com.jbk.login_page.BlankDataError</td>
+<td></td>
+<td>2</td>
+<td>com.jbk.login_page.BlankDataError@6d78f375</td></tr>
+<tr>
+<td title='com.jbk.login_page.Heading.verifyHeading()'><b>verifyHeading</b><br>Test class: com.jbk.login_page.Heading</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.Heading@6a2bcfcb</td></tr>
+<tr>
+<td title='com.jbk.login_page.InvalidEmailAndPassword.verifyInvalidLogIn()'><b>verifyInvalidLogIn</b><br>Test class: com.jbk.login_page.InvalidEmailAndPassword</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.InvalidEmailAndPassword@573f2bb1</td></tr>
+<tr>
+<td title='com.jbk.login_page.InvalidDataError.verifyInvalidLogInErrorMessage()'><b>verifyInvalidLogInErrorMessage</b><br>Test class: com.jbk.login_page.InvalidDataError</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.InvalidDataError@6d8a00e3</td></tr>
+<tr>
+<td title='com.jbk.login_page.Logo.verifyLogo()'><b>verifyLogo</b><br>Test class: com.jbk.login_page.Logo</td>
+<td></td>
+<td>4</td>
+<td>com.jbk.login_page.Logo@1efbd816</td></tr>
+<tr>
+<td title='com.jbk.login_page.LogoutSuccessfullyMessage.verifyLogoutSuccessfullyMessage()'><b>verifyLogoutSuccessfullyMessage</b><br>Test class: com.jbk.login_page.LogoutSuccessfullyMessage</td>
+<td></td>
+<td>7</td>
+<td>com.jbk.login_page.LogoutSuccessfullyMessage@7ac7a4e4</td></tr>
+<tr>
+<td title='com.jbk.login_page.Placeholders.verifyPlaceholders()'><b>verifyPlaceholders</b><br>Test class: com.jbk.login_page.Placeholders</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.Placeholders@5ae9a829</td></tr>
+<tr>
+<td title='com.jbk.login_page.RegisterLink.verifyRegisterLink()'><b>verifyRegisterLink</b><br>Test class: com.jbk.login_page.RegisterLink</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.RegisterLink@50c87b21</td></tr>
+<tr>
+<td title='com.jbk.login_page.RegisterLinkText.verifyRegisterLinkText()'><b>verifyRegisterLinkText</b><br>Test class: com.jbk.login_page.RegisterLinkText</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.RegisterLinkText@48eff760</td></tr>
+<tr>
+<td title='com.jbk.login_page.SignInBoxHeading.verifySignInBoxHeading()'><b>verifySignInBoxHeading</b><br>Test class: com.jbk.login_page.SignInBoxHeading</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.SignInBoxHeading@4de8b406</td></tr>
+<tr>
+<td title='com.jbk.login_page.SubHeading.verifySubHeading()'><b>verifySubHeading</b><br>Test class: com.jbk.login_page.SubHeading</td>
+<td></td>
+<td>2</td>
+<td>com.jbk.login_page.SubHeading@402f32ff</td></tr>
+<tr>
+<td title='com.jbk.login_page.Title.verifyTitle()'><b>verifyTitle</b><br>Test class: com.jbk.login_page.Title</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.Title@548b7f67</td></tr>
+<tr>
+<td title='com.jbk.login_page.Url.verifyUrl()'><b>verifyUrl</b><br>Test class: com.jbk.login_page.Url</td>
+<td></td>
+<td>3</td>
+<td>com.jbk.login_page.Url@3c756e4d</td></tr>
+<tr>
+<td title='com.jbk.login_page.ValidEmailAndPassword.verifyValidLogIn()'><b>verifyValidLogIn</b><br>Test class: com.jbk.login_page.ValidEmailAndPassword</td>
+<td></td>
+<td>5</td>
+<td>com.jbk.login_page.ValidEmailAndPassword@7c0e2abd</td></tr>
+</table><p>
+</body>
+</html>
