@@ -18,7 +18,7 @@ public class Placeholders
 	 	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
+		driver.get("file:///C:/Offline%20Website/index.html");
 	
 		List<WebElement> Placeholders =driver.findElements(By.xpath("//input"));
 	
@@ -31,6 +31,7 @@ public class Placeholders
 		for (WebElement element : Placeholders)
 		{
 			actPlaceholderText.add(element.getAttribute("placeholder"));
+			System.out.println(element.getAttribute("placeholder"));
 		}
 		Assert.assertEquals(actPlaceholderText, expPlaceholderText);
 		driver.close();

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.JBK_1.Registration_Page">
+        <methods>
+          <include name="verifyPlaceholders"/>
+          <include name="verifyTitle"/>
+          <include name="verifyUrl"/>
+          <include name="verifyHeading"/>
+          <include name="verifyAlreadyMemberText"/>
+          <include name="verifyBlankSignIn"/>
+          <include name="LoginPage"/>
+          <include name="verifyValidSignIn"/>
+          <include name="verifyAlreadyMemberLink"/>
+          <include name="closeWindow"/>
+        </methods>
+      </class> <!-- com.JBK_1.Registration_Page -->
+      <class name="com.JBK_1.Log_In_Page">
+        <methods>
+          <include name="verifyBlankLogInErrorMessage"/>
+          <include name="verifyLogo"/>
+          <include name="verifyPlaceholders"/>
+          <include name="verifyRegisterLinkText"/>
+          <include name="verifyLogoutSuccessfullyMessage"/>
+          <include name="verifyInvalidLogIn"/>
+          <include name="verifySubHeading"/>
+          <include name="verifyValidLogIn"/>
+          <include name="verifyUrl"/>
+          <include name="verifyMainHeading"/>
+          <include name="verifyTitle"/>
+          <include name="verifySignInBoxHeading"/>
+          <include name="verifyRegisterLink"/>
+          <include name="verifyInvalidLogInErrorMessage"/>
+        </methods>
+      </class> <!-- com.JBK_1.Log_In_Page -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

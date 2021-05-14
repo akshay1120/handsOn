@@ -13,7 +13,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class Registration_Page 
+public class Registration_Page
 {
 	WebDriver driver ;
 	
@@ -27,7 +27,7 @@ public class Registration_Page
 		driver.findElement(By.partialLinkText("Register")).click();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=15)
 	public void verifyUrl() 
 	{ 	
 		String expectedUrl = "file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/pages/examples/register.html" ; 
@@ -36,7 +36,7 @@ public class Registration_Page
 		Assert.assertEquals(actualUrl, expectedUrl);;
 	}
 	
-	@Test(priority=2)
+	@Test(priority=16)
 	public void verifyTitle() 
 	{ 	
 		String expectedTitle = "JavaByKiran | Registration Page" ; 
@@ -45,7 +45,7 @@ public class Registration_Page
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 	
-	@Test(priority=3)
+	@Test(priority=17)
 	public void verifyHeading() 
 	{ 	
 		WebElement heading = driver.findElement(By.xpath("//b"));
@@ -56,7 +56,7 @@ public class Registration_Page
 		Assert.assertEquals(actualHeading, expectedHeading);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=18)
 	public void verifyAlreadyMemberText() 
 	{ 	
 		WebElement alreadyMemberLink = driver.findElement(By.partialLinkText("membership"));
@@ -67,7 +67,7 @@ public class Registration_Page
 		Assert.assertEquals(actualAlreadyMemberLinkText, expectedAlreadyMemberLinkText);
 	}
 	
-	@Test(priority=5)
+	@Test(priority=19)
 	public void verifyAlreadyMemberLink() 
 	{ 
 		driver.findElement(By.partialLinkText("membership")).click();
@@ -79,7 +79,7 @@ public class Registration_Page
 		driver.findElement(By.partialLinkText("Register")).click();
 	}
 	
-	@Test(priority=6)
+	@Test(priority=20)
 	public void verifyPlaceholders() 
 	{ 	
 		List<WebElement> Placeholders =driver.findElements(By.xpath("//input"));
@@ -99,7 +99,7 @@ public class Registration_Page
 		Assert.assertEquals(actPlaceholderText, expPlaceholderText);
 	}
 	
-	@Test(priority=6)
+	@Test(priority=21)
 	public void verifyBlankSignIn() 
 	{
 		driver.findElement(By.xpath("//button")).click();
@@ -121,7 +121,7 @@ public class Registration_Page
 		Assert.assertEquals(actErrorMessage, expErrorMessage);
 	}
 	
-	@Test(priority=7)
+	@Test(priority=22)
 	public void verifyValidSignIn() 
 	{
 		driver.findElement(By.id("name")).sendKeys("Akshay");

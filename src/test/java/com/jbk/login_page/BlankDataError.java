@@ -17,7 +17,7 @@ public class BlankDataError
 	{
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
+		driver.get("file:///C:/Offline%20Website/index.html");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//button")).click();
 		

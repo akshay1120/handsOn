@@ -22,13 +22,13 @@ public class Log_In_Page
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
+		driver.get("file:///C:/Offline%20Website/index.html");
 	}
 	
 	@Test(priority=1)
 	public void verifyUrl() 
 	{ 	
-		String expectedUrl = "file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html" ; 
+		String expectedUrl = "file:///C:/Offline%20Website/index.html" ; 
 		String actualUrl = driver.getCurrentUrl() ;
 		Assert.assertEquals(actualUrl, expectedUrl);;
 	}
@@ -58,7 +58,7 @@ public class Log_In_Page
 	}
 	
 	@Test(priority=4)
-	public void verifyHeading() 
+	public void verifyMainHeading() 
 	{ 
 		WebElement heading = driver.findElement(By.xpath("//b"));
 	

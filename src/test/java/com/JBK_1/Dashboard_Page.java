@@ -1,6 +1,7 @@
 package com.JBK_1;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -23,7 +24,7 @@ public class Dashboard_Page
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
+		driver.get("file:///C:/Offline%20Website/index.html");
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//button")).click();
@@ -33,7 +34,7 @@ public class Dashboard_Page
 	public void verifyUrl() 
 	{
 		String actUrl = driver.getCurrentUrl();
-		String expUrl = "file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/pages/examples/dashboard.html";
+		String expUrl = "file:///C:/Offline%20Website/pages/examples/dashboard.html";
 	
 		Assert.assertEquals(actUrl, expUrl);
 	}
@@ -102,6 +103,7 @@ public class Dashboard_Page
 	public void verifyNavigationMenuText() 
 	{
 		ArrayList <String> actNavigationMenuText = new ArrayList <String>();
+		
 		for(int i=2 ; i<8 ; i++)
 		{
 			String Element = driver.findElement(By.xpath("//li[" + i + "]")).getText();
@@ -260,17 +262,13 @@ public class Dashboard_Page
 	{
 		List<WebElement> moreInfo  =driver.findElements(By.xpath("//a[text()='More info ']"));
 		
-		ArrayList <String> actNewWindowUrls  = new ArrayList <String>();
+		Set <String> actNewWindowUrls  = new HashSet <String>();
 		
-		ArrayList <String> expNewWindowUrls = new ArrayList <String>();
-		expNewWindowUrls.add("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/"
-				+ "Offline%20Website/Offline%20Website/pages/examples/dashboard.html#");
-		expNewWindowUrls.add("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/"
-				+ "Offline%20Website/Offline%20Website/pages/pdf/python-syllabus.pdf");		
-		expNewWindowUrls.add("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/"
-				+ "Offline%20Website/Offline%20Website/pages/pdf/java-j2ee-syllabus-jbk.pdf");
-		expNewWindowUrls.add("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/"
-				+ "Offline%20Website/Offline%20Website/pages/pdf/selenium-testing-syllabus-jbk.pdf");
+		Set <String> expNewWindowUrls = new HashSet <String>();
+		expNewWindowUrls.add("file:///C:/Offline%20Website/pages/examples/dashboard.html#");
+		expNewWindowUrls.add("file:///C:/Offline%20Website/pages/pdf/python-syllabus.pdf");		
+		expNewWindowUrls.add("file:///C:/Offline%20Website/pages/pdf/java-j2ee-syllabus-jbk.pdf");
+		expNewWindowUrls.add("file:///C:/Offline%20Website/pages/pdf/selenium-testing-syllabus-jbk.pdf");
 		
 		String parent = driver.getWindowHandle();
 		
@@ -295,12 +293,10 @@ public class Dashboard_Page
 	}
 	
 	@Test(priority=19)
-	public void verifyCopyrightStatement () 
+	public void verifyFooterStatement () 
 	{
-		String footer = driver.findElement(By.xpath("//footer")).getText();
-		
-		String actfooter = footer.substring(44,99);
-		String expfooter = "Copyright © 2005-2019 JavaByKiran. All rights reserved.";
+		String actfooter = driver.findElement(By.xpath("//footer")).getText();
+		String expfooter = "Design for Selenium Automation Test V 2.3.0\n" +"Copyright © 2005-2019 JavaByKiran. All rights reserved.";
 	
 		Assert.assertEquals(actfooter, expfooter);
 	}
@@ -332,12 +328,12 @@ public class Dashboard_Page
 	}
 	
 	@Test(priority=21)
-	public void verifyVersionText () 
+	public void verifySequence () 
 	{
-		String actText = driver.findElement(By.xpath("//div[@class='pull-right hidden-xs']")).getText();
-		String expText = "Design for Selenium Automation Test V 2.3.0";
-	
-		Assert.assertEquals(actText, expText);
+		String actSequence = driver.findElement(By.xpath("//ol")).getText();
+		String expSequence = "Home Dashboard";
+		
+		Assert.assertEquals(actSequence, expSequence);
 	}
 	
 	@AfterSuite

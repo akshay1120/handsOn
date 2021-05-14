@@ -15,7 +15,7 @@ public class Heading
 	 	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("file:///C:/Users/Akshay%20S%20Jain/Desktop/Selenium/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
+		driver.get("file:///C:/Offline%20Website/index.html");
 		
 		WebElement heading = driver.findElement(By.xpath("//b"));
 	
