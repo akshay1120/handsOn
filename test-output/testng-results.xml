@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7163" started-at="2021-05-13T19:18:12Z" finished-at="2021-05-13T19:18:19Z">
+  <suite name="Default suite" duration-ms="4975" started-at="2021-05-20T05:28:48Z" finished-at="2021-05-20T05:28:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7163" started-at="2021-05-13T19:18:12Z" finished-at="2021-05-13T19:18:19Z">
-      <class name="com.jbk.operatorsPage.CompleteOperatorsTable">
-        <test-method status="PASS" signature="verifyComplete_OperatorsTable()[pri:0, instance:com.jbk.operatorsPage.CompleteOperatorsTable@42d80b78]" name="verifyComplete_OperatorsTable" duration-ms="7152" started-at="2021-05-14T00:48:12Z" finished-at="2021-05-14T00:48:19Z">
+    <test name="Default test" duration-ms="4975" started-at="2021-05-20T05:28:48Z" finished-at="2021-05-20T05:28:53Z">
+      <class name="com.jbk.dashboard.CourseHeadingExcel">
+        <test-method status="PASS" signature="verifyCourseHeading()[pri:0, instance:com.jbk.dashboard.CourseHeadingExcel@42d80b78]" name="verifyCourseHeading" duration-ms="4952" started-at="2021-05-20T10:58:48Z" finished-at="2021-05-20T10:58:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplete_OperatorsTable -->
-      </class> <!-- com.jbk.operatorsPage.CompleteOperatorsTable -->
+        </test-method> <!-- verifyCourseHeading -->
+      </class> <!-- com.jbk.dashboard.CourseHeadingExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
